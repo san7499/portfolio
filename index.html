@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home — Sanket Khapake</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+  body { 
+    font-family: Inter, system-ui, sans-serif; 
+  }
+
+  .hero {
+    padding: 6rem 0;
+    background: linear-gradient(90deg, rgba(13,110,253,0.08), rgba(13,110,253,0.02));
+  }
+
+  .badge-skill {
+    border-radius: 999px;
+    padding: .45rem .8rem;
+    background: #eaf1ff;
+    color: #0d6efd;
+    font-size: 0.85rem;
+  }
+
+  .profile-circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 3px solid transparent;
+    background: linear-gradient(45deg, #1e00ff);
+    padding: 3px;
+    box-shadow: 0 0 25px #1e00ff;
+  }
+
+  .profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Typing animation styles */
+  #typingName {
+    font-size: 2.7rem;
+    font-weight: 700;
+    white-space: nowrap;
+    border-right: 3px solid black;
+    width: fit-content;
+    overflow: hidden;
+  }
+
+  #typingProfession {
+    font-size: 1.25rem;
+    color: #0d6efd;
+    font-weight: 600;
+    min-height: 40px;
+    white-space: nowrap;
+    border-right: 3px solid #0d6efd;
+    width: fit-content;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+
+  /* MOBILE RESPONSIVE FIXES */
+  @media (max-width: 768px) {
+
+    .hero {
+      padding: 4.5rem 0;
+      text-align: center;
+    }
+
+    #typingName {
+      font-size: 2rem;
+      white-space: normal;
+      display: inline-block;
+      line-height: 2.4rem;
+    }
+
+    #typingProfession {
+      font-size: 1rem;
+      white-space: normal;
+      display: inline-block;
+      line-height: 1.4rem;
+    }
+
+    .profile-circle {
+      width: 150px;
+      height: 150px;
+    }
+
+    .hero p {
+      font-size: 0.95rem;
+      padding: 0 1rem;
+    }
+
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .badge-skill {
+      font-size: 0.75rem;
+      padding: 0.35rem 0.7rem;
+    }
+  }
+
+  /* EXTRA SMALL DEVICES */
+  @media (max-width: 480px) {
+    
+    #typingName {
+      font-size: 1.7rem;
+      border-right-width: 2px;
+    }
+
+    #typingProfession {
+      font-size: 0.9rem;
+      border-right-width: 2px;
+    }
+
+    .profile-circle {
+      width: 130px;
+      height: 130px;
+    }
+
+    nav .navbar-brand {
+      font-size: 1.1rem;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Sanket Khapake</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active fw-bold text-primary" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<header class="hero">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-lg-7">
+
+        <!-- Typing Name -->
+        <div id="typingName"></div>
+
+        <!-- Typing Professions -->
+        <div id="typingProfession"></div>
+
+        <p class="mb-4 mt-3">I build powerful, modern and data-driven applications using clean UI and solid backend development. I love transforming ideas into full working solutions.</p>
+
+        <a href="projects.html" class="btn btn-primary btn-lg me-2">Explore My Projects</a>
+        <a href="resume.pdf" target="_blank" class="btn btn-outline-primary btn-lg">Resume</a>
+
+      </div>
+
+      <div class="col-lg-5 text-center">
+        <div class="profile-circle">
+            <img src="profilepic.jpg" alt="My Image">
+        </div>
+        <p class="location mt-2">Pune, Maharashtra</p>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- QUICK SKILLS SUMMARY -->
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">My Core Skills</h2>
+
+    <div class="d-flex flex-wrap gap-2 justify-content-center">
+      <span class="badge-skill">HTML</span>
+      <span class="badge-skill">CSS</span>
+      <span class="badge-skill">JavaScript</span>
+      <span class="badge-skill">Python</span>
+      <span class="badge-skill">SQL</span>
+      <span class="badge-skill">PL/SQL</span>
+      <span class="badge-skill">Machine Learning</span>
+      <span class="badge-skill">Power BI</span>
+      <span class="badge-skill">Data Analytics</span>
+      <span class="badge-skill">OCR / OpenCV</span>
+    </div>
+
+    <a href="skills.html" class="btn btn-outline-primary mt-4">View All Skills</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-3 bg-white border-top">
+  <div class="container text-center text-muted small">
+    © 2025 Sanket Babasaheb Khapake — All rights reserved.
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- TYPING SCRIPT -->
+<script>
+  // Typing Name
+  const nameText = "Hi — I’m Sanket Khapake";
+  const nameElement = document.getElementById("typingName");
+  let nameIndex = 0;
+
+  function typeName() {
+    if (nameIndex < nameText.length) {
+      nameElement.textContent += nameText.charAt(nameIndex);
+      nameIndex++;
+      setTimeout(typeName, 90);
+    } else {
+      setTimeout(startProfessionTyping, 500);
+    }
+  }
+
+  // Typing Professions Rotation
+  const professions = [
+    "Data Scientist Enthusiast",
+    "AI/ML Enthusiast",
+    "Full-Stack Developer"
+  ];
+
+  let profIndex = 0;
+  let charIndex = 0;
+  const professionElement = document.getElementById("typingProfession");
+
+  function startProfessionTyping() {
+    if (charIndex < professions[profIndex].length) {
+      professionElement.textContent += professions[profIndex].charAt(charIndex);
+      charIndex++;
+      setTimeout(startProfessionTyping, 80);
+    } else {
+      setTimeout(deleteProfession, 1200);
+    }
+  }
+
+  function deleteProfession() {
+    if (charIndex > 0) {
+      professionElement.textContent = professions[profIndex].substring(0, charIndex - 1);
+      charIndex--;
+      setTimeout(deleteProfession, 50);
+    } else {
+      profIndex = (profIndex + 1) % professions.length;
+      setTimeout(startProfessionTyping, 200);
+    }
+  }
+
+  // Start animation
+  typeName();
+</script>
+
+</body>
+</html>
